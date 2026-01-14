@@ -8,6 +8,7 @@
     --header-elements-padding: 1.5rem;
     --marquee-content-height: 2rem;
     --color-neutral-grey: #C4C4C6;
+    --dropdown-link-color: rgb(60, 60, 67);
 }
 body{
     font-family: Helvetica, Arial, sans-serif;
@@ -184,6 +185,40 @@ svg{
     font-family: inherit;
     font-size: 1rem;
 }
+
+.dropdown-menu-top{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom:1rem;
+}
+
+.dropdown-item-centered{
+    display: flex;
+    justify-content: center;
+    width:50%;
+}
+
+.dropdown-divisory{
+    width:1px;
+    background-color: var(--color-neutral-grey);
+}
+
+.dropdown-menu-list{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+    border-top:1px solid var(--color-neutral-grey);
+    border-bottom:1px solid var(--color-neutral-grey);
+}
+.dropdown-action{
+    color: var(--dropdown-link-color);
+    text-decoration: none;
+}
+
+
 .transparent-block{
     background-color: inherit;
     border: none; 
