@@ -7,6 +7,7 @@
 :root{
     --header-elements-padding: 1.5rem;
     --marquee-content-height: 2rem;
+    --color-neutral-grey: #C4C4C6;
 }
 body{
     font-family: Helvetica, Arial, sans-serif;
@@ -49,11 +50,21 @@ svg{
     background-color: rgb(60, 60, 67);  
 }
 
-.site-header{
+.promo-bar-item{
+    color:white;
+    text-decoration: none;
+}
+
+.promo-bar-item:hover{
+    text-decoration: underline;
+}
+
+.header-top{
     display:flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
 }
+
 
 .header-right-nav{
     padding-right: var(--header-elements-padding);
@@ -89,8 +100,52 @@ svg{
     height: .125rem;
     width:1.25rem;
     background-color: black;
+    transition: transform 0.3s ease-out;
 }
 
+#hamburger-toggle{
+    display:none;
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+  width:100%;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+.overlay{
+    display:none;
+    position:fixed;
+    z-index: 50;
+    width:100vw;
+    height:100vh;
+    background: rgba(0,0,0,0.3);
+}
+
+#hamburger-toggle:checked ~ .dropdown-menu{
+  display: flex;
+}
+
+#hamburger-toggle:checked ~ .overlay{
+  display: flex;
+}
+
+#hamburger-toggle:checked + .hamburger-menu #line1 {
+  transform: rotate(45deg) translateY(10px);
+}
+#hamburger-toggle:checked + .hamburger-menu #line2,
+#hamburger-toggle:checked + .hamburger-menu #line3 
+{
+  opacity: 0; 
+}
+
+#hamburger-toggle:checked + .hamburger-menu #line4 {
+  transform: rotate(-45deg) translateY(-11.5px);
+}
 
 .icon{
     display:inline-block;
@@ -104,6 +159,31 @@ svg{
     height: 1.5rem;
 }
 
+.header-search{
+    width:100%;
+}
+
+.form-container{
+    display:flex;
+    align-items: center;
+    padding-left: var(--header-elements-padding);
+    padding-right: var(--header-elements-padding);
+    position: relative;
+}
+
+.form-container::after {
+    content: '';
+    position: absolute;
+    left: var(--header-elements-padding);
+    right: var(--header-elements-padding); 
+    bottom: 0;
+    border-bottom: 1.5px solid var(--color-neutral-grey);
+}
+#search-input{
+    padding: .375rem .75rem;
+    font-family: inherit;
+    font-size: 1rem;
+}
 .transparent-block{
     background-color: inherit;
     border: none; 
