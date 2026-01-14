@@ -4,27 +4,29 @@
     box-sizing: border-box;
 }
 
+:root{
+    --header-elements-padding: 1.5rem;
+    --marquee-content-height: 2rem;
+}
 body{
     font-family: Helvetica, Arial, sans-serif;
 }
 
-svg{
-    width:1.5rem;
-    height:1.5rem;
+li{
+    list-style: none;
+}
 
+svg{
+    width:inherit;
+    height: inherit;
 }
-.promo-bar{
-    display:flex;
-    align-items: center;
-    overflow: hidden;
-    background-color: rgb(60, 60, 67);  
-}
+
 
 .marquee-content{
     white-space: nowrap;
     color: white;
     font-size: .875em;
-    line-height: 2em;
+    line-height: var(--marquee-content-height);
     animation: marquee 30s linear infinite;
 }
 
@@ -34,23 +36,43 @@ svg{
 
 }
 
-.site-header{
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-    color:white;
+.header-wrapper {
+    position: sticky;
+    top: -2rem;  
+    z-index: 10;
 }
 
+.promo-bar{
+    display:flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(60, 60, 67);  
+}
+
+.site-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right-nav{
+    padding-right: var(--header-elements-padding);
+}
+
+.header-right-nav ul{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:0.3rem;
+}
 
 .hamburger-menu{
     display:flex;
     flex-direction: column;
     justify-content: center;
     gap:0.125rem;
-    padding-left: 1.5rem;
+    padding-left: var(--header-elements-padding);
     height: 3.4375rem;
-    background-color: white;
-    border:none;
 }
 
 .line-container{
@@ -69,11 +91,24 @@ svg{
     background-color: black;
 }
 
-.items-center{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+
+.icon{
+    display:inline-block;
+    width:1.125rem;
+    height:1.125rem;
 }
+
+.icon-small{
+    display:inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.transparent-block{
+    background-color: inherit;
+    border: none; 
+}
+
 @keyframes marquee{
     0% {transform: translateX(100vw);}
     100% {transform: translateX(-100%);}
