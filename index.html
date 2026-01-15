@@ -28,6 +28,7 @@
             </div>
         </div>
 
+
         <div class="site-header">
             <div class="header-top">
                 <div class="header-left">
@@ -45,19 +46,27 @@
                         <ul class="dropdown-menu-top">
                             <li class="dropdown-item-centered"><a class="dropdown-action">Sign In</a></li>
                             <li class="dropdown-divisory"></li>
-                            <li class="dropdown-item-centered"><a class="dropdown-action">Rest of Europe ($)</a></li>
+                            <li class="dropdown-item-centered"><a class="dropdown-action">Rest of Europe (€)</a></li>
                         </ul>
 
                         <ul class="dropdown-menu-list">
-                            <li class="dropdown-item"><a href ="https://www.muji.eu/sale" class="dropdown-action">Sale</a></li>
-                            <li class="dropdown-item"><a href ="https://www.muji.eu/women" class="dropdown-action">Women</a></li>
-                            <li class="dropdown-item"><a href ="https://www.muji.eu/men" class="dropdown-action">Men</a></li>
-                            <li class="dropdown-item"><a href ="https://www.muji.eu/home" class="dropdown-action">Homeware</a></li>
-                            <li class="dropdown-item"><a href ="https://www.muji.eu/furniture" class="dropdown-action">Furniture</a></li>
-                            <li class="dropdown-item"><a href ="https://www.muji.eu/stationery" class="dropdown-action">Stationery</a></li>
-                            <li class="dropdown-item"><a href ="https://www.muji.eu/beauty" class="dropdown-action">Beauty</a></li>
-                            <li class="dropdown-item"><a href ="https://www.muji.eu/travel" class="dropdown-action">Travel</a></li>
-                            <li class="dropdown-item"><a href ="https://www.muji.eu/gifts" class="dropdown-action">Gift Guide</a></li>                        
+                            <li><a href ="https://www.muji.eu/sale" class="dropdown-action">Sale</a></li>
+                            <li><a href ="https://www.muji.eu/women" class="dropdown-action">Women</a></li>
+                            <li><a href ="https://www.muji.eu/men" class="dropdown-action">Men</a></li>
+                            <li><a href ="https://www.muji.eu/home" class="dropdown-action">Homeware</a></li>
+                            <li><a href ="https://www.muji.eu/furniture" class="dropdown-action">Furniture</a></li>
+                            <li><a href ="https://www.muji.eu/stationery" class="dropdown-action">Stationery</a></li>
+                            <li><a href ="https://www.muji.eu/beauty" class="dropdown-action">Beauty</a></li>
+                            <li><a href ="https://www.muji.eu/travel" class="dropdown-action">Travel</a></li>
+                            <li><a href ="https://www.muji.eu/gifts" class="dropdown-action">Gift Guide</a></li>                        
+                        </ul>
+
+
+                        <ul class="dropdown-menu-footer">
+                            <li class="dropdown-footer-item"><a href ="https://www.muji.eu/pages/store-locator.html" class="dropdown-action">Store Locator</a></li>   
+                            <li class="dropdown-footer-item"><a href ="https://www.muji.eu/pages/muji-membership.html" class="dropdown-action">Membership</a></li> 
+                            <li class="dropdown-footer-item"><a href ="https://www.muji.eu/pages/frequently-asked-questions.html" class="dropdown-action">FAQs</a></li> 
+                            <li class="dropdown-footer-item"><a href ="https://www.muji.eu/pages/frequently-asked-questions/returns-refunds.html" class="dropdown-action">Returns & Refunds</a></li>                                         
                         </ul>
                     </nav>
                     </button>
@@ -70,6 +79,12 @@
                 <div class="header-right">
                     <nav class="header-right-nav">
                         <ul>
+                            <li class="mobile-hidden">
+                                <a>
+                                    <img id="eu-svg" src="https://cdn11.bigcommerce.com/s-36unquhwg5/stencil/e694ebc0-be15-013e-5bca-1ef4e2705301/img/flags/europe.svg" alt="Rest of Europe Flag">
+                                </a>
+                            </li>
+
                             <li>
                                 <button class="nav-button transparent-block">
                                     <i class="icon">
@@ -89,19 +104,24 @@
                                 </button>
                             </li>
 
-                            <li>
-                                <a>
-                                    <i class="icon-small">
-                                        <svg viewBox="0 0 24 25">
-                                            <path d="M3.24988 10.2908C3.24988 7.59029 5.61902 5.51099 8.39988 5.51099C9.83335 5.51099 11.0947 6.18313 11.9999 7.05282C12.905 6.18313 14.1664 5.51099 15.5999 5.51099C18.3807 5.51099 20.7499 7.59029 20.7499 10.2908C20.7499 12.1407 19.961 13.7674 18.8681 15.1425C17.777 16.5152 16.3498 17.6803 14.9833 18.627C14.4614 18.9885 13.9334 19.3221 13.4501 19.5682C12.9964 19.7993 12.4746 20.011 11.9999 20.011C11.5251 20.011 11.0034 19.7993 10.5496 19.5682C10.0664 19.3221 9.53834 18.9885 9.01641 18.627C7.64993 17.6803 6.22275 16.5152 5.1317 15.1425C4.03876 13.7674 3.24988 12.1407 3.24988 10.2908ZM8.39988 7.01099C6.32063 7.01099 4.74988 8.54009 4.74988 10.2908C4.74988 11.6943 5.34567 13.001 6.30597 14.2092C7.26816 15.4198 8.5628 16.4879 9.87062 17.3939C10.3655 17.7368 10.8316 18.0285 11.2303 18.2316C11.6585 18.4496 11.9065 18.511 11.9999 18.511C12.0932 18.511 12.3412 18.4496 12.7694 18.2316C13.1681 18.0285 13.6343 17.7368 14.1291 17.3939C15.437 16.4879 16.7316 15.4198 17.6938 14.2092C18.6541 13.001 19.2499 11.6943 19.2499 10.2908C19.2499 8.54009 17.6791 7.01099 15.5999 7.01099C14.4057 7.01099 13.2907 7.72441 12.5944 8.62991C12.4525 8.81455 12.2328 8.92275 11.9999 8.92275C11.767 8.92275 11.5473 8.81455 11.4053 8.62991C10.7091 7.72441 9.59403 7.01099 8.39988 7.01099Z"></path>
-                                        </svg>
-                                    </i>
-
+                            <li class="mobile-hidden">
+                                <a class="location-link" href="https://www.muji.eu/pages/store-locator.html">
+                                    <img id="location-svg" class="svg-image-black-outline" src="https://www.svgrepo.com/show/343451/location-map-pin-3.svg"/>
                                 </a>
                             </li>
-
                             <li>
-                                <a>
+                                <a href="https://www.muji.eu/login.php">
+                                   <img id="heart-svg" class="svg-image-black-outline" src="https://www.svgrepo.com/show/335086/heart-outline.svg"/>
+                                </a>
+                            </li>
+                            
+                            <li class="mobile-hidden">
+                                <a href="">
+                                    <img id="person-svg" class="svg-image-black-outline" src="https://www.svgrepo.com/show/326743/person-outline.svg"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.muji.eu/cart.php">
                                     <i class="icon-small">
                                         <svg viewBox="0 0 24 25">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1476 5.51099H5.33502L4.15484 3.39558C4.02238 3.15814 3.77177 3.01099 3.49988 3.01099H1.99988C1.58566 3.01099 1.24988 3.34677 1.24988 3.76099C1.24988 4.1752 1.58566 4.51099 1.99988 4.51099H3.05948L4.22417 6.59864L6.91024 12.5419L6.913 12.5479L7.14958 13.0714L4.45274 15.948C4.25883 16.1549 4.19813 16.4534 4.29586 16.7195C4.39359 16.9857 4.63305 17.1739 4.91474 17.2061L7.37287 17.4871C10.4475 17.8385 13.5522 17.8385 16.6269 17.4871L19.0851 17.2061C19.4966 17.1591 19.7921 16.7874 19.745 16.3758C19.698 15.9643 19.3263 15.6688 18.9147 15.7158L16.4566 15.9968C13.4951 16.3352 10.5047 16.3352 7.54319 15.9968L6.56767 15.8853L8.54705 13.7739C8.5662 13.7535 8.58398 13.7323 8.6004 13.7104L9.35322 13.8084C10.4081 13.9456 11.4745 13.9726 12.535 13.8887C15.0085 13.6931 17.3009 12.5161 18.9014 10.6201L19.4794 9.93524C19.4988 9.91224 19.5168 9.88809 19.5334 9.86293L20.6107 8.22108C21.3744 7.05731 20.5396 5.51099 19.1476 5.51099ZM8.65615 12.205C8.49074 12.1835 8.34811 12.0784 8.27846 11.927L8.27712 11.9241L6.05662 7.01099H19.1476C19.3465 7.01099 19.4657 7.23189 19.3566 7.39814L18.304 9.00222L17.7551 9.65251C16.4131 11.2424 14.4908 12.2293 12.4167 12.3933C11.4602 12.469 10.4983 12.4447 9.54676 12.3209L8.65615 12.205Z"></path>
@@ -116,46 +136,64 @@
                     </nav>
 
                 </div>
-            </div>
             <div class="header-search">
                 <div class="form-container">
-                    <i class="icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24">
-                                <path d="M21 21l-4.35-4.35M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                    </i>
+ 
                     <input id="search-input" class="transparent-block" placeholder="Search the store" autocomplete="off"/>
-                </div>
+                </div>                
+            </div>
+
             </div>
         </div>
 
     </header>
 
+    <main>
+        <div class="test-div">
+        <p>Bezveze</p>
+            <p>Bezveze</p>
+                <p>Bezveze</p>
+                    <p>Bezveze</p>
+                        <p>Bezveze</p>
+                            <p>Bezveze</p>
+                                <p>Bezveze</p>
+            <p>Bezveze</p>
+                <p>Bezveze</p>
+                    <p>Bezveze</p>
+                        <p>Bezveze</p>
+                            <p>Bezveze</p>
+                                <p>Bezveze</p>
+            <p>Bezveze</p>
+                <p>Bezveze</p>
+                    <p>Bezveze</p>
+                        <p>Bezveze</p>
+                            <p>Bezveze</p>
+                                <p>Bezveze</p>
+            <p>Bezveze</p>
+                <p>Bezveze</p>
+                    <p>Bezveze</p>
+                        <p>Bezveze</p>
+                            <p>Bezveze</p>
 
-    <p>Bezveze</p>
-        <p>Bezveze</p>
             <p>Bezveze</p>
                 <p>Bezveze</p>
                     <p>Bezveze</p>
                         <p>Bezveze</p>
                             <p>Bezveze</p>
-        <p>Bezveze</p>
             <p>Bezveze</p>
                 <p>Bezveze</p>
                     <p>Bezveze</p>
                         <p>Bezveze</p>
                             <p>Bezveze</p>
-        <p>Bezveze</p>
             <p>Bezveze</p>
                 <p>Bezveze</p>
                     <p>Bezveze</p>
                         <p>Bezveze</p>
                             <p>Bezveze</p>
-        <p>Bezveze</p>
-            <p>Bezveze</p>
-                <p>Bezveze</p>
-                    <p>Bezveze</p>
-                        <p>Bezveze</p>
+        </div>
+
+    </main>
+
 
     </body>
 
