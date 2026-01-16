@@ -352,7 +352,7 @@ svg:hover {
     background-color: #f5f3f2;
 }
 
-.highlights-swipe-container {
+.swipe-container {
     display: flex;
     overflow-x: auto;
     gap: 0.5rem;
@@ -509,7 +509,7 @@ svg:hover {
     padding: 2rem 1.25rem 3.5rem 1.25rem;
 }
 
-.best-sellers-container h4{
+.container-h4{
     margin-bottom: .75rem;
     font-size: 1.125rem;
     color: var(--dropdown-link-color);
@@ -538,6 +538,112 @@ svg:hover {
     left: 1rem;
 }
 
+.products-container{
+    padding: 3.5rem 0 2.5rem 1.25rem;
+}
+
+.product-card{
+    flex: 0 0 55%;
+    max-width: 460px;
+}
+
+.product-card .text-container{
+    margin-top: 2rem;
+}
+
+.switch-img-container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+    
+.switch-img-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.switch-img-container .second{
+    opacity: 0;
+}
+
+.switch-img-container:hover .second{
+    opacity: 1;
+}
+
+.switch-img-container:hover .first{
+    opacity: 0;
+}
+
+.product-card p{
+    margin-top: .5rem;
+}
+
+.product-card strong{
+    color: var(--dropdown-link-color);
+}
+.card-swatch{
+    display: flex;
+    gap: .5rem;
+    padding-top: .5rem;
+}
+
+.card-swatch span{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+#white-shoes{
+    background-image: url('https://cdn11.bigcommerce.com/s-36unquhwg5/images/stencil/26w/attribute_value_images/566769.preview.jpg?t=1763430166');
+}
+
+#black-shoes{
+    background-image: url('https://cdn11.bigcommerce.com/s-36unquhwg5/images/stencil/26w/attribute_value_images/566770.preview.jpg?t=1763430166')  ;
+}
+
+#light-gray-apparel{
+    background-image: url('https://cdn11.bigcommerce.com/s-36unquhwg5/images/stencil/26w/attribute_value_images/575756.zoom.jpg?t=1768583384');
+}
+
+#black-apparel{
+    background-image: url('https://cdn11.bigcommerce.com/s-36unquhwg5/images/stencil/26w/attribute_value_images/575757.zoom.jpg?t=1768583384');  
+}
+
+#dark-gray-apparel{
+    background-image: url('https://cdn11.bigcommerce.com/s-36unquhwg5/images/stencil/26w/attribute_value_images/575758.zoom.jpg?t=1768583384');
+}
+
+#brown-zip-apparel{
+    background-image: url('https://cdn11.bigcommerce.com/s-36unquhwg5/images/stencil/26w/attribute_value_images/559975.zoom.jpg?t=1763420812');
+}
+
+#gray-zip-apparel{
+    background-image: url('https://cdn11.bigcommerce.com/s-36unquhwg5/images/stencil/26w/attribute_value_images/559972.preview.jpg?t=1763420811')
+}
+
+#gray-bath-robe{
+    background-image: url('https://cdn11.bigcommerce.com/s-36unquhwg5/images/stencil/26w/attribute_value_images/575522.zoom.jpg?t=1768594172')
+}
+
+#brown-bath-robe{
+    background-image: url('https://cdn11.bigcommerce.com/s-36unquhwg5/images/stencil/26w/attribute_value_images/575523.zoom.jpg?t=1768594172')
+}
+
+#green-bath-robe{
+    background-image: url('https://cdn11.bigcommerce.com/s-36unquhwg5/images/stencil/26w/attribute_value_images/575524.zoom.jpg?t=1768594172')
+}
+
+#blue-bath-robe{
+    background-image: url('https://cdn11.bigcommerce.com/s-36unquhwg5/images/stencil/26w/attribute_value_images/575525.zoom.jpg?t=1768594172')
+}
+
+
 .link-with-paragraph{
     height: fit-content;
     color: white;
@@ -547,6 +653,7 @@ svg:hover {
 .card-paragraph{
     position: relative;
 }
+
 .card-paragraph::after{
     content: '';
     display: inline-block;
@@ -564,6 +671,7 @@ svg:hover {
 .link-with-paragraph:hover .card-paragraph::after{
     transform: scaleX(1);
 }
+
 
 .mobile-hidden {
     display: none;
@@ -703,7 +811,6 @@ svg:hover {
         padding: 5rem 6.25rem;
     }
 
-
 }
 
 @media (min-width: 765px) and (max-width: 1259px) {
@@ -781,6 +888,12 @@ svg:hover {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 0.5rem;
     }
+
+
+    .product-card{
+        flex: 0 0 25%;
+    }
+
 
 
 }
