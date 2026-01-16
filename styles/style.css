@@ -347,8 +347,8 @@ svg:hover {
     opacity: 1;
 }
 
-.highlights-container {
-    padding: 3.5rem 0 2.5rem 1rem;
+.swipe-section {
+    padding: 3.875rem 0rem 2.5rem 1rem;
     background-color: #f5f3f2;
 }
 
@@ -356,6 +356,7 @@ svg:hover {
     display: flex;
     overflow-x: auto;
     gap: 0.5rem;
+    padding-right: 1rem;
     scroll-behavior: smooth;
 }
 
@@ -483,8 +484,8 @@ svg:hover {
     display:flex;
     gap: 1rem;
     position: absolute;
-    top: 11%;
-    right: 10%;
+    top: 4.6rem;
+    right: 2rem;
     z-index: 2;
 }
 
@@ -793,7 +794,7 @@ svg:hover {
         padding: 7rem 0;
     }
 
-    .highlights-container {
+    .swipe-section {
         padding-left: 5rem;
     }
 
@@ -818,7 +819,7 @@ svg:hover {
         padding: 3.5rem 0;
     }
 
-    .highlights-container {
+    .swipe-section {
         padding-left: 3.5rem;
     }
 
