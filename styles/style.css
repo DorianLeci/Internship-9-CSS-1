@@ -311,15 +311,16 @@ svg:hover {
     display: flex;
     gap: 0.5rem;
     overflow-x: auto;
-    height:fit-content;
+    height: fit-content;
     padding: 0 .5rem;
     cursor: pointer;
+    scroll-behavior: smooth;
 }
 
 .promo-card {
     flex: 0 0 74%;
     position: relative;
-        aspect-ratio: 4/5;
+    aspect-ratio: 4/5;
 }
 
 .promo-card img {
@@ -339,6 +340,7 @@ svg:hover {
     transform: translateX(-50%);
 }
 
+.highlights-card p::after,
 .promo-card p::after {
     content: '';
     display: inline-block;
@@ -353,6 +355,7 @@ svg:hover {
     transition: transform 0.5s ease-in-out;
 }
 
+.highlights-card:hover p::after,
 .promo-card:hover p::after {
     transform: scaleX(1);
 }
@@ -361,15 +364,69 @@ svg:hover {
     opacity: 1;
 }
 
-.transparent-block {
-    background-color: inherit;
-    border: none;
+.highlights-container{
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+    background-color: #f5f3f2;
+}
+
+.highlights-swipe-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 0.5rem;
+    padding: 0 1rem;
+    scroll-behavior: smooth;
+}
+
+.title-padded {
+    margin-bottom: .75rem;
+    padding-left: 1rem;
+    font-size: 1.125rem;
+}
+
+.highlights-card {
+    flex: 0 0 71%;
+    max-width: 460px;
+}
+
+.highlights-card p {
+    position: relative;
+    width: fit-content;
+    margin: 0.6rem 0;
+    color: var(--dropdown-link-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.highlights-card a{
+    text-decoration: none;
+}
+
+.img-container{
+    overflow: hidden;
+
+}
+.img-container img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.highlights-card:hover .img-container img{
+    transform: scale(1.03);
 }
 
 .mobile-hidden {
     display: none;
 
 }
+
+.transparent-block {
+    background-color: inherit;
+    border: none;
+}
+
 
 @keyframes marquee {
     0% {
@@ -384,7 +441,7 @@ svg:hover {
 @media (min-width: 1260px) {
 
     main {
-        margin-top: 4.2rem;
+        margin-top: 2rem;
     }
 
     .site-header {
@@ -434,6 +491,7 @@ svg:hover {
 
     .dropdown-menu-list {
         border: none;
+        padding: 0;
     }
 
     .dropdown-menu-footer {
@@ -459,6 +517,17 @@ svg:hover {
         width: 1.3rem;
         height: 1.3rem;
     }
+
+    .sales-container {
+        padding: 8rem 0;
+    }
+
+}
+
+@media (min-width: 765px) and (max-width: 1259px) {
+    .sales-container {
+        padding: 5rem 0;
+    }
 }
 
 @media (min-width:765px) {
@@ -466,27 +535,28 @@ svg:hover {
     .sales-container {
         grid-template-columns: 1fr 60%;
         align-items: center;
-        padding: 5rem 0;
     }
 
-    .sales-text-container{
-        margin-left: 3.5rem;
+    .sales-text-container {
+        margin-left: 5rem;
     }
-    .promo-gallery{
+
+    .promo-gallery {
         overflow-x: hidden;
     }
+
     .promo-card {
         flex: 1 1 auto;
     }
 
-    .promo-card img{
+    .promo-card img {
         display: block;
         width: 100%;
         height: 105%;
         object-fit: cover;
     }
 
-    .promo-card p{
+    .promo-card p {
         bottom: 5%;
     }
 
