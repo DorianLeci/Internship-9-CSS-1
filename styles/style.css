@@ -505,21 +505,12 @@ svg:hover {
     animation-delay: 6s;
 }
 
-.mobile-hidden {
-    display: none;
-
-}
-
-.transparent-block {
-    background-color: inherit;
-    border: none;
-}
-
 .best-sellers-container{
     padding: 2rem 1.25rem 3.5rem 1.25rem;
 }
 
 .best-sellers-container h4{
+    margin-bottom: .75rem;
     font-size: 1.125rem;
     color: var(--dropdown-link-color);
 }
@@ -572,6 +563,16 @@ svg:hover {
 
 .link-with-paragraph:hover .card-paragraph::after{
     transform: scaleX(1);
+}
+
+.mobile-hidden {
+    display: none;
+
+}
+
+.transparent-block {
+    background-color: inherit;
+    border: none;
 }
 
 
@@ -698,6 +699,10 @@ svg:hover {
         left: 60%;
     }
 
+    .best-sellers-container{
+        padding: 5rem 6.25rem;
+    }
+
 
 }
 
@@ -770,6 +775,11 @@ svg:hover {
     .link-wrapper{
         display: flex;
         gap: 1.5rem;
+    }
+
+    .best-sellers-gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.5rem;
     }
 
 
