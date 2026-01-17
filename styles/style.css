@@ -365,21 +365,20 @@ svg:hover {
     font-size: 1.125rem;
 }
 
-.highlights-card {
+.swipe-card {
     flex: 0 0 71%;
     max-width: 460px;
 }
 
-.highlights-card p {
+.swipe-card p {
     position: relative;
-    width: fit-content;
     margin: 0.6rem 0;
     color: var(--dropdown-link-color);
     font-size: 0.9rem;
     font-weight: bold;
 }
 
-.highlights-card a {
+.swipe-card a {
     text-decoration: none;
 }
 
@@ -397,7 +396,7 @@ svg:hover {
 }
 
 .seller-card:hover .img-container img,
-.highlights-card:hover .img-container img {
+.swipe-card:hover .img-container img {
     transform: scale(1.03);
 }
 
@@ -467,11 +466,11 @@ svg:hover {
 
 .hero-slide-text a::after {
     content: '\2192'; 
+    display: inline-block;
+    vertical-align: middle;
     color: white;
     font-weight: bold;
     font-size: 1.3rem;
-    display: inline-block;
-    vertical-align: middle;
     transition: transform 0.3s ease;
     transform: translateX(0);         
 }
@@ -644,7 +643,56 @@ svg:hover {
     background-image: url('https://cdn11.bigcommerce.com/s-36unquhwg5/images/stencil/26w/attribute_value_images/575525.zoom.jpg?t=1768594172')
 }
 
+#muji-stories{
+    background-color: white;
+}
 
+#muji-stories .swipe-container{
+    gap: .375rem;
+}
+
+#muji-stories .container-h4{
+    margin-top: 2rem;
+}
+
+.story-card{
+    flex: 0 0 calc(100vw - 6rem);
+}
+
+.story-card img{
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/5;
+    object-fit: cover; 
+}
+
+.story-content{
+    margin-top: 1rem;
+}
+
+.story-card .title{
+    color: var(--dropdown-link-color);
+    font-size: .875rem;
+    font-weight: bold;
+}
+
+.story-card .description{
+    margin-top: .5rem;
+    color: var(--dropdown-link-color);
+    font-size: .75rem;
+}
+
+.story-card .description::after{
+    content: '\2192'; 
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.story-card:hover .story-content p{
+    color: var(--sales-header-color);
+}
 .link-with-paragraph{
     height: fit-content;
     color: white;
@@ -659,10 +707,10 @@ svg:hover {
     content: '';
     display: inline-block;
     position: absolute;
-    width: 100%;
-    height: 3px;
     left: 0;
     bottom: -2px;
+    width: 100%;
+    height: 3px;
     background-color: var(--sales-header-color);
     transform: scaleX(0);
     transform-origin: left;
@@ -684,6 +732,9 @@ svg:hover {
     border: none;
 }
 
+.link-no-underline{
+    text-decoration: none;
+}
 
 
 @keyframes marquee {
@@ -812,6 +863,10 @@ svg:hover {
         padding: 5rem 6.25rem;
     }
 
+    #muji-stories{
+        padding-left: 6.25rem;
+    }
+
 }
 
 @media (min-width: 765px) and (max-width: 1259px) {
@@ -826,6 +881,10 @@ svg:hover {
     .hero-inner .hero-slide-text {
         left: 55%;
     }    
+
+    #muji-stories{
+        padding-left: 1rem;
+    }   
 }
 
 @media (min-width:765px) {
@@ -858,7 +917,7 @@ svg:hover {
         bottom: 5%;
     }
 
-    .highlights-card {
+    .swipe-card {
         flex: 0 0 calc((100vw - 2.5*var(--widget-margin))/4);
         overflow: hidden;
     }
@@ -893,6 +952,18 @@ svg:hover {
 
     .product-card{
         flex: 0 0 25%;
+    }
+
+    .story-card{
+        flex: 0 0 calc((100vw - var(--widget-margin))/4);
+    }
+
+    .story-card .title{
+        font-size: 1.125rem;
+    }
+
+    .story-card .description{
+        font-size: 1rem;
     }
 
 
