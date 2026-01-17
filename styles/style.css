@@ -137,20 +137,9 @@ svg {
 }
 
 
-.overlay {
-    display: none;
-    position: fixed;
-    z-index: 50;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.3);
-}
+
 
 #hamburger-toggle:checked~.dropdown-menu {
-    display: flex;
-}
-
-#hamburger-toggle:checked~.overlay {
     display: flex;
 }
 
