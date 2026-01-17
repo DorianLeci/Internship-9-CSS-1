@@ -18,7 +18,6 @@
 }
 
 body {
-    position: relative;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -813,7 +812,7 @@ footer{
 }
 
 #consent-manager {
-    position: relative;
+    display: flex;
     padding: 0 3rem 1.5rem 2.5rem;
     display: flex;
     justify-content: flex-end;
@@ -1168,7 +1167,6 @@ footer{
     }
 
     #consent-manager {
-        position: relative;
         padding: .5rem 4rem 2.5rem 2.5rem;
         display: flex;
         justify-content: flex-end;
